@@ -1,22 +1,14 @@
 // Learning Functional Programming with Javascript
 // Chapter 02, Video 03, Exercise 01
 
-const x = 1
+const x = "Bananas";
 
-if (x === 1) {
-  sayXis1()
-}
+const doIf = (condition, cb) => {
+  if (condition) {
+    cb();
+  }
+};
 
-if (x === "Bananas") {
-  sayXisBananas()
-}
-
-if (x < 10 && x > 0) {
-  sayXisBetween0And10()
-}
-
-function sayXis1() { console.log("x is equal to 1") }
-
-function sayXisBananas() { console.log("x is equal to 'Bananas'") }
-
-function sayXisBetween0And10() { console.log("x is between 0 and 10") }
+doIf((x === 1), () => console.log("x is equal to 1"));
+doIf((x === "Bananas"), () => console.log("x is equal to bananas"));
+doIf((x < 10 && x > 0), () => console.log("x is between 0 and 10"));
