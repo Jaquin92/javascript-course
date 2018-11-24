@@ -2,7 +2,7 @@
 const bar = (x, y) => {
 	let z;
 	foo(x)
-	console.log([y, z])
+	console.log(z)
 	function foo(x) {
 		y++;
 		z = x * y;
@@ -10,7 +10,7 @@ const bar = (x, y) => {
 }
 
 
-var y = 5, z;
+
 
 bar(20, 5);
 bar(20, 5);
@@ -19,4 +19,4 @@ bar(20, 5);
 // z;		// 120
 
 bar(25, 10);
-z;		// 175
+		// 175
